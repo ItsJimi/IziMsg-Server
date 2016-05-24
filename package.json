@@ -1,0 +1,24 @@
+{
+  "name": "izimsg-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ws": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+	"start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsJimi/IziMsg-Server.git"
+  },
+  "author": "Jimi Maiquez and Florian H-J",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ItsJimi/IziMsg-Server/issues"
+  },
+  "homepage": "https://github.com/ItsJimi/IziMsg-Server#readme"
+}
