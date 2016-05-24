@@ -33,7 +33,11 @@ wss.on('connection', function(ws) {
 			}
 			if (msg.color) {
 				if (colors[msg.color]) {
-					ws.color = msg.color;
+					if (getUsedColors(wss).indexOf(msg.color) == -1) {
+						ws.color = msg.color;
+					} else {
+						sendError(ws, "color_already_used");
+					}
 				} else {
 					sendError(ws, "color_not_exist");
 				}
